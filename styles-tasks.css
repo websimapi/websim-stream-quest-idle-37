@@ -4,11 +4,10 @@
     display: grid;
     /* Ensure consistent card width across all skills, including Mining */
     /* Previously: grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); */
-    /* Previously (fixed width): grid-template-columns: repeat(auto-fill, minmax(220px, 220px)); */
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 220px));
     gap: 20px;
     margin-top: 20px;
-    justify-content: stretch; /* allow tracks to expand to fill available row space */
+    justify-content: flex-start; /* prevent cards from stretching to fill the row */
 }
 
 .task-card {
@@ -19,13 +18,17 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 260px; /* keep cards from stretching too wide while still allowing more columns */
+    /* Fix: Ensure card never exceeds the grid track width, preventing layout breaks */
+    min-width: 0;
     width: 100%;
-    margin: 0 auto; /* center cards inside their grid cell */
 }
 
 .task-card h4 {
     color: var(--primary);
+    /* Fix: Ensure long task names (common in Mining) don't force the card wider */
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* Compact meta row for time / XP / level */
