@@ -26,11 +26,22 @@ main {
 .content-area {
     flex-grow: 1;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+}
+
+#skill-details {
+    flex: 1;
     padding: 30px;
-    padding-bottom: 160px; /* extra space so content doesn't hide behind fixed console */
-    overflow-y: auto; /* Independent scroll for center content */
+    overflow-y: auto; /* Independent scroll for content */
     scrollbar-width: none;
     -ms-overflow-style: none;
+}
+
+#skill-details::-webkit-scrollbar {
+    display: none;
 }
 
 .content-area::-webkit-scrollbar {

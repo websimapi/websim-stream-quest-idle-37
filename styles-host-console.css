@@ -45,11 +45,10 @@
     flex: 0 0 130px;
     overflow: visible;
 
-    /* Keep console pinned to bottom of the central content column */
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    /* Console sits at bottom of flex column */
+    position: relative;
+    width: 100%;
+    margin-top: auto;
 }
 
 /* Hide input row by default; only show in chat-view */
