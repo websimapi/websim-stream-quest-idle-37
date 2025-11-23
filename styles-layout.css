@@ -8,6 +8,17 @@ main {
     min-height: 0; /* allow main to shrink so the host console stays visible */
 }
 
+/* Hide the visible scrollbar on the main scroll container while keeping scrolling enabled */
+main::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+main {
+    scrollbar-width: none;      /* Firefox */
+    -ms-overflow-style: none;   /* IE/Edge legacy */
+}
+
 /* Sidebar: skills on left */
 .skills-sidebar {
     width: 250px;
