@@ -8,6 +8,25 @@
     margin-top: 20px;
 }
 
+/* Make task cards more compact as viewport width decreases */
+@media (max-width: 1200px) {
+    .task-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .task-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .task-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+}
+
 .task-card {
     background: #25252d;
     border: 1px solid var(--border);
