@@ -351,13 +351,15 @@ export const ITEM_ICONS = {
     obsidian_chunk: 'item_coal.png', // reuse black coal icon
     shattered_blade_glass: 'item_glass_shards.png',
     black_shard: 'item_glass_shards.png',
-    volcanic_heart: 'item_ruby_gem.png', // placeholder
+    // Use existing ruby gem art for volcanic heart instead of a missing ruby icon
+    volcanic_heart: 'item_gem_ruby.png',
 
     // TIER 4 (Mithril, Sapphire, Ruby, Titanium, Emerald)
     mithril_ore: 'item_ore_mithril.png',
     refined_mithril_chip: 'item_ore_mithril.png',
     mithril_nugget: 'item_ore_mithril.png',
     living_mithril_core: 'item_power_core.png',
+    // Dedicated sapphire gem icon (new asset added below)
     rough_sapphire: 'item_gem_sapphire.png',
     sapphire_shard: 'item_gem_sapphire.png',
     polished_sapphire: 'item_gem_sapphire.png',
@@ -386,7 +388,8 @@ export const ITEM_ICONS = {
     crystalized_spell_core: 'item_mysterious_orb.png',
     precursor_alloy: 'item_unknown_alloy.png',
     alloy_chip: 'item_broken_chip.png',
-    stabilized_tech_plate: 'item_tech_casing.png',
+    // Map to an existing tech-looking plate icon rather than a missing asset
+    stabilized_tech_plate: 'item_mech_plating.png',
     ancient_power_core: 'item_automaton_core.png',
     quantum_crystal: 'item_singularity_shards.png',
     phase_shard: 'item_singularity_shards.png',
