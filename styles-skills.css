@@ -113,14 +113,12 @@
     border: 1px solid var(--border);
     background: rgba(0, 0, 0, 0.4);
     color: var(--text-dim);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     text-align: center;
     cursor: pointer;
 
-    /* NEW: keep label on one line and truncate if too narrow */
+    /* Keep label on one line without truncation */
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .tier-tab.active {
