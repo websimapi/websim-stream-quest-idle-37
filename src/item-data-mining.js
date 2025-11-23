@@ -93,11 +93,11 @@ export const ITEM_NAMES_MINING = {
 
 export const ITEM_ICONS_MINING = {
     // TIER 1
-    small_stone: 'item_stone_fragments.png',
+    small_stone: 'item_mining_small_stone.png',
     cracked_pebble: 'item_stone_fragments.png',
-    rough_flint: 'item_stone_fragments.png',
-    dull_shard: 'item_stone_fragments.png',
-    limestone_chunk: 'item_stone_fragments.png',
+    rough_flint: 'item_mining_rough_flint.png',
+    dull_shard: 'item_mining_dull_shard.png',
+    limestone_chunk: 'item_mining_limestone_chunk.png',
     chalk_dust: 'item_cosmic_dust.png',
     fossil_fragment: 'item_ancient_scrap.png',
     ancient_shell: 'item_ancient_scrap.png',
