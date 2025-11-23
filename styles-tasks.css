@@ -4,10 +4,23 @@
     display: grid;
     /* Ensure consistent card width across all skills, including Mining */
     /* Previously: grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); */
-    grid-template-columns: repeat(auto-fill, minmax(220px, 220px));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 20px;
     margin-top: 20px;
     justify-content: flex-start; /* prevent cards from stretching to fill the row */
+}
+
+/* Make task cards slightly narrower on medium viewports so 3 columns can still fit */
+@media (max-width: 1150px) {
+    .task-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 980px) {
+    .task-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
 }
 
 .task-card {
